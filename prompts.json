@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "Facts",
+    "prompt": "What is the primary difference between nuclear fission and nuclear fusion, and which process powers the sun?",
+    "reference_answer": "Nuclear fission is the splitting of a heavy atomic nucleus into lighter nuclei, releasing energy. Nuclear fusion is the combining of two light atomic nuclei into a heavier nucleus, releasing significantly more energy. The sun is powered by nuclear fusion, primarily fusing hydrogen nuclei (protons) into helium."
+  },
+  {
+    "id": 2,
+    "category": "Facts",
+    "prompt": "Explain the biological function of mitochondria in eukaryotic cells and why they possess their own circular DNA.",
+    "reference_answer": "Mitochondria generate most of the cell's chemical energy in the form of ATP through oxidative phosphorylation (cellular respiration). They have circular DNA due to endosymbiotic theory: mitochondria originated from ancient free-living aerobic prokaryotes that were engulfed by ancestral eukaryotic cells."
+  },
+  {
+    "id": 3,
+    "category": "Maths",
+    "prompt": "A store offers a 20% discount on a $150 jacket. During checkout, an additional 10% coupon is applied to the discounted price, followed by an 8% sales tax on the final item price. What is the total amount paid by the customer? Show your step-by-step calculation.",
+    "reference_answer": "Step 1: 20% discount on $150 = $150 - $30 = $120. Step 2: 10% additional coupon on $120 = $120 - $12 = $108. Step 3: 8% sales tax on $108 = $108 * 0.08 = $8.64. Final total paid = $108 + $8.64 = $116.64."
+  },
+  {
+    "id": 4,
+    "category": "Maths",
+    "prompt": "If a bag contains 4 red balls, 5 blue balls, and 3 green balls (12 total), what is the probability of drawing two blue balls consecutively without replacement? Express the answer as a simplified fraction.",
+    "reference_answer": "Total balls = 12. Probability of first blue ball = 5/12. Remaining balls = 11, remaining blue balls = 4. Probability of second blue ball = 4/11. Combined probability = (5/12) * (4/11) = 20/132 = 5/33."
+  },
+  {
+    "id": 5,
+    "category": "Reasoning",
+    "prompt": "A farmer must cross a river with a fox, a goose, and a bag of grain. The boat can only carry the farmer and one item at a time. If left alone together, the fox will eat the goose, and the goose will eat the grain. How can the farmer transport all three safely across the river?",
+    "reference_answer": "1. Farmer takes the goose across and leaves it on the other side. 2. Farmer returns alone. 3. Farmer takes the fox across. 4. Farmer brings the goose back with him to the original side. 5. Farmer leaves the goose and takes the grain across. 6. Farmer leaves the grain with the fox and returns alone. 7. Farmer takes the goose across. All three arrive safely."
+  },
+  {
+    "id": 6,
+    "category": "Reasoning",
+    "prompt": "Three switches (1, 2, 3) outside a closed, windowless room control three incandescent light bulbs inside. You can flip the switches however you like, but you may only enter the room once. How do you determine which switch controls which bulb?",
+    "reference_answer": "Turn Switch 1 ON and leave it on for 10 minutes so the bulb heats up. After 10 minutes, turn Switch 1 OFF and turn Switch 2 ON. Immediately enter the room: The bulb that is currently lit is controlled by Switch 2. The bulb that is off but warm to the touch is controlled by Switch 1. The bulb that is off and cold is controlled by Switch 3."
+  },
+  {
+    "id": 7,
+    "category": "Reasoning",
+    "prompt": "Alice, Bob, and Charlie each wear either a red or blue hat. Alice can see Bob and Charlie's hats; Bob can see only Charlie's hat; Charlie can see nobody's hat. They are told at least one hat is red. Alice is asked if she knows her hat color and says 'No'. Bob is then asked and also says 'No'. Can Charlie deduce his hat color, and if so, what color is it?",
+    "reference_answer": "Yes, Charlie can deduce his hat is red. Deduction: If Bob and Charlie both wore blue hats, Alice would have known hers was red (since at least one is red). Since Alice said 'No', Bob and Charlie cannot both be blue. Bob knows this. If Charlie's hat were blue, Bob would have known his own hat must be red. Because Bob said 'No', Charlie's hat cannot be blue. Therefore, Charlie deduces his hat is Red."
+  },
+  {
+    "id": 8,
+    "category": "Summarising",
+    "prompt": "Summarize the following passage into exactly two sentences, capturing the problem, the core mechanism, and the benefit: 'Reinforcement Learning from Human Feedback (RLHF) addresses the alignment problem in foundation models. Traditional supervised fine-tuning trains models to predict text likelihood rather than helpfulness or harmlessness. RLHF trains a reward model based on human preference comparisons between model completions, then optimizes the policy model using Proximal Policy Optimization (PPO) to maximize rewards. As a result, language models produce answers that align more closely with human values and intent while substantially reducing toxic or untruthful hallucinations.'",
+    "reference_answer": "To overcome the limitation of supervised models failing to distinguish helpfulness from raw text likelihood, RLHF trains a reward model on human preferences and optimizes the model using PPO. This mechanism produces outputs that closely mirror human intent and values while significantly diminishing hallucinations and harmful content."
+  },
+  {
+    "id": 9,
+    "category": "Summarising",
+    "prompt": "Summarize this technical concept in 3 concise bullet points for a junior engineer: 'Database indexing works like an index at the back of a book. Instead of scanning an entire table sequentially (a full table scan of O(N)), a database engine creates a balanced tree (B-Tree) data structure mapping indexed column values to row storage pointers. This decreases lookup complexity to O(log N). However, every insert, update, or delete requires modifying both the table and its associated indexes, adding write overhead and consuming additional disk storage.'",
+    "reference_answer": "• Core Mechanism: Database indexes use B-Tree data structures to map column values directly to row storage locations rather than performing full table scans.\n• Performance Advantage: Reading and querying data is accelerated from O(N) linear time to O(log N) logarithmic lookup speed.\n• Trade-off & Cost: Every insert, update, or delete incurs additional write overhead and consumes supplementary disk storage to keep the index trees updated."
+  },
+  {
+    "id": 10,
+    "category": "Facts",
+    "prompt": "What is the difference between synchronous and asynchronous execution in computer programming, and when should asynchronous I/O be preferred over multi-threading?",
+    "reference_answer": "Synchronous execution runs tasks sequentially, blocking progress until the current task finishes. Asynchronous execution allows a program to initiate an operation and continue other work before the operation completes, using event loops and callbacks/promises. Asynchronous I/O is preferred over multi-threading when handling high-concurrency network or file I/O bound tasks, because it avoids the heavy memory overhead and context-switching penalties of managing thousands of OS threads."
+  }
+]
